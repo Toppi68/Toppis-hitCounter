@@ -1,6 +1,8 @@
 # hitCounter
 Hit Counter - Overlay for streamers
 
+https://toppi68.github.io/hitCounter/
+
 **QUICKSTART:
 
 Just open the index.html in your fav. browser.
