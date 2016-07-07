@@ -1,4 +1,4 @@
-# hitCounter
+# Toppis hitCounter
 Hit Counter - Overlay for streamers
 
 https://toppi68.github.io/hitCounter/
