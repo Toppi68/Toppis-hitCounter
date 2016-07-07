@@ -20,6 +20,7 @@ To save your runs to your webservers database, take a look in the ajax-demo.html
 It will give you an idea about get/send the run-data via ajax-request to your server.
 
 **EXTEND STYLES, LANGS:
+
 How to add a style:
 1. copy paste the default style in /style/ - rename it to yours.
 2. edit /js/style.js
