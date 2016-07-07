@@ -3,4 +3,3 @@
 
 For more details see:
 
-https://toppi68.github.io/hitCounter/
