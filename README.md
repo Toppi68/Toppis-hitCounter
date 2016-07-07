@@ -1,5 +1,5 @@
 # Toppis hitCounter
-## Overlay for streamers
+## Overlay for game streamers
 
 For more details see:
 
