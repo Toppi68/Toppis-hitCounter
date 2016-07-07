@@ -5,8 +5,7 @@ Hit Counter - Overlay for streamers
 
 Just open the index.html in your fav. browser.
 All your gamedata like runs, splits, pb's is autom. saved in the local browser storage.
-If you delete your browser-history, your gamedata will be also deleted. 
-To avoid that, embed the coutner on your webserver. See **AJAX
+To embed the coutner on your webserver. See **AJAX
 
 **ADVANCED STUFF:
 

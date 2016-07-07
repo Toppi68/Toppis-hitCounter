@@ -311,7 +311,11 @@ X.userData = function () {
 		}			
 	};
 	this.setArrUdata = function (arrUdata) {
-		
+		if(!arrUdata || ! typeof(arrUdata.idxCurRun) == 'undefined'){
+			//Very first programstart
+			this.newRun();
+			return;
+		}
 		this.idxCurRun 	= arrUdata.idxCurRun;
 		this.isoLang	= arrUdata.isoLang;
 		
