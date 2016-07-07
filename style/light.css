@@ -1,0 +1,219 @@
+/**
+ * 	Main Container
+ */
+.counter {
+	background-color:#fff;
+}
+/**
+ * 	Live-Overlay-Output (left site)
+ */
+.live {
+	padding : 4em;
+}
+.live-title {
+  color: #333;
+  border: 1px solid #ccc;
+  margin: 0;
+  padding: .5em;
+  text-shadow: -7px 7px 5px #999;
+}
+/*Headlines and Cells */
+.live-headline-row {
+  background-color: #999;
+}
+.live-headline-row > h2 {
+  border-right: 1px solid #ccc;
+  float: left;
+  margin: 0;
+  padding: 0.5em 0;
+  text-align: center;
+  color : #fff;
+}
+.live-headline-cell-number {
+	width : 5%;
+}
+.live-headline-cell-split {
+	width : 65%;
+}
+.live-headline-cell-now {
+	width : 10%;
+}
+.live-headline-cell-diff {
+	width : 10%;
+}
+.live-headline-cell-pb {
+	width : calc(10% - 5px);  /*border-correction*/
+}
+
+/*Splits and Cells*/
+.live-split-row {
+	text-align: center;
+	border-bottom : 1px solid #ccc;
+}
+.live-split-row > p {
+  border-right: 1px solid #ccc;
+  float: left;
+  font-size: 1.5em;
+}
+.live-split-cell-number {
+	width : 5%;
+}
+.live-split-cell-split {
+	width : 65%;
+	text-align: left;
+}
+.live-split-cell-now {
+	width : 10%;
+}
+.live-split-cell-diff {
+	width : 10%;
+}
+.live-split-cell-pb {
+	width : calc(10% - 5px); /*border-correction*/
+}
+
+/* Totals Row */
+.live-totals-row {
+	text-align: center;
+	background-color: #fff;
+	color : #333;
+	border: 1px solid;
+}
+.live-totals-row > p {
+	float : left;
+  	border-left: 1px solid #ccc;
+  	padding: 0.5em 0;
+  	font-size : 1.5em;
+}
+
+/**
+ * 	Special highlight classes 
+ */
+.live-split-active {
+  box-shadow: 0 0 10px 2px #333;
+}
+
+.live-split-done {
+	color : #ccc !important;
+}
+.live-split-newPB {
+	color: #32d900 !important;
+}
+.live-split-bad {
+	color : #FF3500 !important;
+}
+
+/**
+ * 	Moderation-Output (right site)
+ */
+.mod {
+	padding : 1em;
+	border: 1px solid #ccc;
+}
+.mod-runInterface {
+  border: 1px solid #ccc;
+  margin: 1em 0;
+}
+.mod-input-title {
+	width: calc(100% - 15px);
+	height 	: 4em;	
+}
+.mod-container-splits {
+	height: 18em;
+	overflow:auto;
+}
+.mod-row-headline {
+
+}
+.mod-row-headline > h2 {
+  float: left;
+  margin: 0.2em 0;
+}
+.mod-row-active {
+	padding : 1em 0;
+	background-color: #ccc;
+}
+.mod-split-row  input {
+	width : calc(100% - 2em);
+}
+.mod-combo-select-run {
+	width: 100%;	
+}
+.mod-combo-select-style {
+	width: 100%;
+}
+.mod-combo-select-lang {
+	width: 100%;
+}
+.mod-btn {
+  	border: 3px solid #ccc;
+  	border-radius: 100%;
+  	display: table;
+  	float: left;
+  	height: 5em;
+  	width: 5em;
+   	text-align: center;    
+  	margin:1em;
+  	padding:1em;
+  	cursor:pointer;
+	transition: .2s;
+    -ms-transition: .2s;
+    -webkit-transition: .2s;
+}
+.mod-btn:hover {
+	box-shadow: 0px 0px 10px 10px #ccc;
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.mod-btn > span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/**
+ * 	 Controls Menue 
+ */
+.ctl {
+	border: 1px solid #ccc;
+}
+
+/**
+ * 	Misc stuff
+ */
+
+button {
+  color: #333;
+  font-size: 1em;
+  margin: 5px;
+  padding: 10px;
+  width: calc(25% - 10px);
+}
+input, select, textarea {
+	border-color: #ccc #ccc #999 #999;
+	border: solid;
+	border-width: 1px;
+    line-height: 2em;
+ 	padding: 0 0 0 1em;
+    font-size:1em;
+    height: 2em;
+}
+
+.glow {
+  animation:glow 0.5s infinite alternate;
+}
+
+@keyframes glow {
+  from { box-shadow:0px 0px 10px 0px #ccc; }
+  to { box-shadow:0px 0px 20px 15px #ccc; }
+}
+
+.smaLabel {
+	font-size:0.7em;
+	font-weight:normal; 
+	color:#999;
+	margin:0;
+}
+.dirty {
+	background:red;
+}

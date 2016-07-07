@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+	<title>Hitcounter</title>
+	<meta name="keywords" content="Split-counter for no hit, no death runs" />
+	<meta name="description" content="Splitt-counter for no hit, no death runs by Toppi" />
+	<meta name="robots" content="index,follow" />
+
+	<script type="text/javascript" charset="UTF-8" src="js/style.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="js/lang.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="js/counter.js"></script>
+	
+	<script type="text/javascript">	    
+		$(document ).ready(function() {	
+			
+			/**
+			 * Save via Ajax-requst by extend fct. onSave()
+			 * send the data to your server
+			 */
+			X.counter.onSave = function (data){
+				
+				yourAjaxCall = {
+					url			: 'yourDomain',
+					postData 	: JSON.stringify(data)
+					
+				};
+			};	
+
+			/**
+			 * Load Data via Ajax-requst
+			 * create a bew userData-object
+			 * set the data
+			 * init the counter by the uData obeject.
+			 */
+			yourAjaxCall = function (data){	
+				var data = X.parseJson(data);
+				var uData = new X.userData(); 
+				uData.setArrUdata(data);
+				X.counter.init(uData);
+			};
+		});	    
+	</script>
+</head>
+<body>
+	<div id="counter"></div>
+</body>
+</html>
