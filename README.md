@@ -2,17 +2,20 @@
 Hit Counter - Overlay for streamers
 
 **QUICKSTART:
+
 Just open the index.html in your fav. browser.
 All your gamedata like runs, splits, pb's is autom. saved in the local browser storage.
 If you delete your browser-history, your gamedata will be also deleted. 
 To avoid that, embed the coutner on your webserver. See **AJAX
 
 **ADVANCED STUFF:
+
 This software is free. You can edit, extend, change it for your own needs, 
 solong you spend my note at the Mod-buttom-place. 
 Thank you very much :-)
 
-**AJAX
+**AJAX:
+
 To save your runs to your webservers database, take a look in the ajax-demo.html. 
 It will give you an idea about get/send the run-data via ajax-request to your server.
 
