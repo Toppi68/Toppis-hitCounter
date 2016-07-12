@@ -1,4 +1,15 @@
 /**
+ * 	Global stuff
+ */
+
+h1 {
+	font-size : 1.3em;
+}
+h2 {
+	font-size : 1.2em;
+}
+
+/**
  * 	Main Container
  */
 .counter {
