@@ -994,10 +994,12 @@ X.counter = {
 		p.html(X.lang.get('saveInfo'));
 		mainDiv.append(p);		
 		
-		var div = $(document.createElement('div'));
-		div.css('float','right');
-		div.html('&#66;&#121;&#32;&#84;&#111;&#112;&#112;&#105;&#54;&#56;');
-		mainDiv.append(div);
+		var a = $(document.createElement('a'));
+		a.css('float','right');
+		a.attr('target','_blank');
+		a.attr('href','https://github.com/Toppi68/Toppis-hitCounter');
+		a.html('Me on GitHub');
+		mainDiv.append(a);
 				
 	},
 	setDirty : function (bool) {
