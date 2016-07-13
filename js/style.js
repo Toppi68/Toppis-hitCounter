@@ -5,7 +5,8 @@ X.style = {
 	 * Add your own styles here 
 	*/
 	styles	: {
-		'def-dark.css'			: 'Dark (default)',
+		'def-red.css'			: 'Dark-Red (default)',
+		'silver.css'			: 'Silver',
 		'light.css'				: 'Light'
 	},
 	
@@ -15,7 +16,7 @@ X.style = {
 	setStyle : function (filename){
 		
 		if(!filename){
-			filename = 'def-dark.css';
+			filename = 'def-red.css';
 		}
 		
 		$('#counter-user-theme').remove();

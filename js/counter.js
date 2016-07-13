@@ -55,7 +55,7 @@ X.userData = function () {
 		this.title 		= X.lang.get('newUntitledRun');
 		this.splits		= [];
 		this.curSplit 	= 0;
-		this.style		= 'def-dark.css';
+		this.style		= 'def-red.css';
 		this.curModRow	= 0;
 		this.ts			= 0;
 		this.totals		= {
@@ -431,11 +431,11 @@ X.counter = {
 			counter.addClass('counter');
 						
 			var lDiv = $(document.createElement('div'));
-			lDiv.attr('class', 'sp50');
+			lDiv.attr('class', 'sp50 live-outer');
 			counter.append(lDiv);
 			
 			var rDiv = $(document.createElement('div'));
-			rDiv.attr('class', 'sp50');
+			rDiv.attr('class', 'sp50 mod-outer');
 			counter.append(rDiv);
 					
 			var p = $(document.createElement('p'));

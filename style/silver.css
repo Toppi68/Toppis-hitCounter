@@ -13,7 +13,7 @@ h2 {
  * 	Main Container
  */
 .counter {
-	background-color:#fff;
+	background-color:#000;
 }
 /**
  * 	Live-Overlay-Output (left site)
@@ -22,20 +22,19 @@ h2 {
 	padding : 4em;
 }
 .live {
-  border: 1px solid #666;
   border-radius: 2em;
-  box-shadow: 0 0 10px 10px #ccc;
+  box-shadow: 0 0 1.8em 0.5em #ddd;
 }
 .live-title {
-  color: #333;
+  color: #fff;
   margin: 0;
   padding: 0.5em;
-  text-shadow: -2px 9px 10px #333;
+  text-shadow: -2px 9px 10px #ccc;
 }
 /*Headlines and Cells */
 .live-headline-row {
-  background-color: #ddd;
-  color: #333;
+  background-color: #333;
+  color: #fff;
 }
 .live-headline-row > h2 {
   float: left;
@@ -66,8 +65,7 @@ h2 {
 	border-bottom : 1px solid #fff;
 }
 .live-split-row > p {
-  border-right: 1px solid #ccc;
-  color: #666;
+  color: #ccc;
   float: left;
   font-size: 1.5em;
 }
@@ -94,7 +92,7 @@ h2 {
   text-align: center;
 }
 .live-totals-row > p {
-  color: #333;
+  color: #fff;
   float: left;
   font-size: 1.5em;
   padding: 0.5em 0;
@@ -104,17 +102,18 @@ h2 {
  * 	Special highlight classes 
  */
 .live-split-active {
-  background-color: #ffff6c;
-  border: 2px solid #333;
+  background-color: #000;
+  border: 1px solid #333;
+  box-shadow: 0 0 10px 6px #ccc;
 }
 .live-split-active > p {
-  color: #333;
+  color: #fff;
 }
 .live-split-done {
 	
 }
 .live-split-done > p {
-	color: #666 !important;
+	color: #ccc !important;
 }
 .live-split-newPB {
 
@@ -158,7 +157,7 @@ h2 {
   margin: 0.2em 0;
 }
 .mod-row-active {
-  background-color: #ffff6c;
+  background-color: #ccc;
   padding: 1em 0;
 }
 .mod-split-row  input {
@@ -189,7 +188,7 @@ h2 {
     -webkit-transition: .2s;
 }
 .mod-btn:hover {
-	box-shadow: 0px 0px 10px 10px #ffff6c;
+	box-shadow: 0px 0px 10px 10px #fff;
     -ms-transform: scale(1.1); 
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
@@ -197,7 +196,7 @@ h2 {
 .mod-btn > span {
   display: table-cell;
   vertical-align: middle;
-  color: #666;
+  color: #fff;
 }
 
 /**
@@ -227,7 +226,8 @@ input, select, textarea {
  	padding: 0 0 0 1em;
     font-size:1em;
     height: 2em;
-    color : #666;
+    background-color:#000;
+    color : #ccc;
 }
 
 .glow {
