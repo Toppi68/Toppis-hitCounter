@@ -4,6 +4,45 @@
 * @version 1.00
 */
 var X = X || {};
+
+/**
+ *	HotkeyMapping
+ * 	shift+(s) //Next Split
+ * 	shift+(r) //Restart run
+ * 	shift+(+) //Add Hit
+ * 	shift+(-) //Remove Hit
+ */
+
+$(document).keypress(function(event) {
+	if (event.shiftKey) {
+		
+		var btnId = '';
+		
+		switch(event.which){
+			case 82:
+				//Reset
+				btnId = '#mod-btn-reRun';
+			break;
+			case 83:
+				//Split
+				btnId = '#mod-btn-nextSplit';
+			break;
+			case 42:
+				//Addhit
+				btnId = '#mod-btn-addHit';
+			break;
+			case 95:
+				//RemHit
+				btnId = '#mod-btn-remHit';
+			break;
+		}
+		if(btnId){
+			$(btnId).trigger('click');
+			event.preventDefault();
+		}	
+	}
+});
+
 X.userData = function () {
 	
 	this.idxCurRun	= 0;
@@ -666,7 +705,6 @@ X.counter = {
 		p.attr('class', 'clear');
 		cont.append(p);	
 		
-		
 		/**
 		 * AddHit - RemoveHit Next Split 
 		 */
@@ -675,9 +713,10 @@ X.counter = {
 		form.append(cont);
 
 		var div = $(document.createElement('div'));
+		div.attr('id', 'mod-btn-addHit');
 		div.attr('class', 'mod-btn mod-btn-addHit');
 		var span = $(document.createElement('span'));
-		span.html(X.lang.get('addHit'));
+		span.html(X.lang.get('addHit')+'</br>'+'shift&nbsp;+');
 		div.append(span);
 		div.on('click',function () {
 			X.counter.curRun.addHit();
@@ -686,9 +725,10 @@ X.counter = {
 		cont.append(div);		
 
 		var div = $(document.createElement('div'));
+		div.attr('id', 'mod-btn-remHit');
 		div.attr('class', 'mod-btn mod-btn-remHit');
 		var span = $(document.createElement('span'));
-		span.html(X.lang.get('remHit'));
+		span.html(X.lang.get('remHit')+'</br>'+'shift&nbsp;-');
 		div.append(span);
 		div.on('click',function () {
 			X.counter.curRun.remHit();
@@ -697,9 +737,10 @@ X.counter = {
 		cont.append(div);
 		
 		var div = $(document.createElement('div'));
+		div.attr('id', 'mod-btn-nextSplit');
 		div.attr('class', 'mod-btn mod-btn-nextSplit');
 		var span = $(document.createElement('span'));
-		span.html(X.lang.get('nextSplit'));
+		span.html(X.lang.get('nextSplit')+'</br>'+'shift&nbsp;s');
 		div.append(span);
 		div.on('click',function () {
 			
@@ -726,9 +767,10 @@ X.counter = {
 		cont.append(div);
 		
 		var div = $(document.createElement('div'));
+		div.attr('id', 'mod-btn-reRun');
 		div.attr('class', 'mod-btn mod-btn-reRun');
 		var span = $(document.createElement('span'));
-		span.html(X.lang.get('reRun'));
+		span.html(X.lang.get('reRun')+'</br>'+'shift&nbsp;r');
 		div.append(span);
 		div.on('click',function () {
 			if(!confirm(X.lang.get('rusure'))){
