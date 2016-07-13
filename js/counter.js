@@ -19,11 +19,11 @@ $(document).keypress(function(event) {
 		var btnId = '';
 		
 		switch(event.which){
-			case 82:
+			case 8:
 				//Reset
 				btnId = '#mod-btn-reRun';
 			break;
-			case 83:
+			case 13:
 				//Split
 				btnId = '#mod-btn-nextSplit';
 			break;
@@ -701,6 +701,14 @@ X.counter = {
 		});
 		div.append(combo);		
 		
+		
+
+		
+		
+		
+		
+
+		
 		var p = $(document.createElement('p'));
 		p.attr('class', 'clear');
 		cont.append(p);	
@@ -716,7 +724,7 @@ X.counter = {
 		div.attr('id', 'mod-btn-addHit');
 		div.attr('class', 'mod-btn mod-btn-addHit');
 		var span = $(document.createElement('span'));
-		span.html(X.lang.get('addHit')+'</br>'+'shift&nbsp;+');
+		span.html(X.lang.get('addHit')+'</br>'+X.lang.get('hotkAddHit'));
 		div.append(span);
 		div.on('click',function () {
 			X.counter.curRun.addHit();
@@ -728,7 +736,7 @@ X.counter = {
 		div.attr('id', 'mod-btn-remHit');
 		div.attr('class', 'mod-btn mod-btn-remHit');
 		var span = $(document.createElement('span'));
-		span.html(X.lang.get('remHit')+'</br>'+'shift&nbsp;-');
+		span.html(X.lang.get('remHit')+'</br>'+X.lang.get('hotkRemHit'));
 		div.append(span);
 		div.on('click',function () {
 			X.counter.curRun.remHit();
@@ -740,7 +748,7 @@ X.counter = {
 		div.attr('id', 'mod-btn-nextSplit');
 		div.attr('class', 'mod-btn mod-btn-nextSplit');
 		var span = $(document.createElement('span'));
-		span.html(X.lang.get('nextSplit')+'</br>'+'shift&nbsp;s');
+		span.html(X.lang.get('nextSplit')+'</br>'+X.lang.get('hotkSplit'));
 		div.append(span);
 		div.on('click',function () {
 			
@@ -770,7 +778,7 @@ X.counter = {
 		div.attr('id', 'mod-btn-reRun');
 		div.attr('class', 'mod-btn mod-btn-reRun');
 		var span = $(document.createElement('span'));
-		span.html(X.lang.get('reRun')+'</br>'+'shift&nbsp;r');
+		span.html(X.lang.get('reRun'));
 		div.append(span);
 		div.on('click',function () {
 			if(!confirm(X.lang.get('rusure'))){

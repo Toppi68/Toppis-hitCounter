@@ -29,7 +29,11 @@ X.lang = {
 			'reRun'					: 'Restart Run',
 			'finRun'				: 'Finish Run',
 			'rusure'				: 'Are you sure?',
-			'saveInfo'				: 'All your runs are saved autom. in your browser-history.'		
+			'saveInfo'				: 'All your runs are saved autom. in your browser-history.',
+			'hotkAddHit'			: '(shift+)',
+			'hotkRemHit'			: '(shift-)',
+			'hotkSplit'				: '(shift+enter)',
+			'hotkReset'				: '(shift+backsp.)'
 		},
 		de	: {
 			'iso'					: 'DE',
@@ -59,7 +63,11 @@ X.lang = {
 			'reRun'					: 'Restart Lauf',
 			'finRun'				: 'Lauf beenden',
 			'rusure'				: 'Bist Du sicher?',
-			'saveInfo'				: 'Alle Daten werden automatisch in der Browserhistory gespeichert.'		
+			'saveInfo'				: 'Alle Daten werden automatisch in der Browserhistory gespeichert.',
+			'hotkAddHit'			: '(shift+)',
+			'hotkRemHit'			: '(shift-)',
+			'hotkSplit'				: '(shift+enter)',
+			'hotkReset'				: '(shift+backsp.)'	
 		}
 	},
 	/*
