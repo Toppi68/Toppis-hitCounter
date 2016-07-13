@@ -101,11 +101,21 @@ X.userData = function () {
 			}
 		};
 		this.nextSplit = function () {
+			var setPB = false;
 			var split = this.getCurrentSplit();
 			split.calc();
 			split.stopCountPB();			
 			if(this.curSplit+1 >= this.splits.length){
-				this.resetRun(true);
+				if(this.totals.diff < 0){
+					if(confirm(X.lang.get('resetPB'))){
+						setPB = true;
+					}
+				}
+				if(setPB){
+					this.resetRun(true);
+				} else {
+					this.resetRun();
+				}	
 			} else {
 				this.curSplit++;
 			}
