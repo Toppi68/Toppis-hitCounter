@@ -3,7 +3,7 @@
  */
 
 h1 {
-	font-size : 1.3em;
+	font-size : 1.6em;
 }
 h2 {
 	font-size : 1.2em;
@@ -18,15 +18,18 @@ h2 {
 /**
  * 	Live-Overlay-Output (left site)
  */
-.live {
+.live-outer {
 	padding : 4em;
+}
+.live {
+  border-radius: 2em;
+  box-shadow: 0 0 1.8em 0.5em #d92843;
 }
 .live-title {
   color: #fff;
-  border: 1px solid #ccc;
   margin: 0;
-  padding: .5em;
-  text-shadow: -9px 8px 17px #00ff00;
+  padding: 0.5em;
+  text-shadow: -2px 9px 10px #ff0000;
 }
 /*Headlines and Cells */
 .live-headline-row {
@@ -34,7 +37,6 @@ h2 {
   color: #fff;
 }
 .live-headline-row > h2 {
-  border-right: 1px solid #fff;
   float: left;
   margin: 0;
   padding: 0.5em 0;
@@ -53,6 +55,7 @@ h2 {
 	width : 10%;
 }
 .live-headline-cell-pb {
+	border: none!important;
 	width : calc(10% - 5px);  /*border-correction*/
 }
 
@@ -62,7 +65,8 @@ h2 {
 	border-bottom : 1px solid #fff;
 }
 .live-split-row > p {
-  border-right: 1px solid #fff;
+  border-right: 1px solid #d92843;
+  color: #f6bd37;
   float: left;
   font-size: 1.5em;
 }
@@ -80,50 +84,58 @@ h2 {
 	width : 10%;
 }
 .live-split-cell-pb {
+	border: none !important;
 	width : calc(10% - 5px); /*border-correction*/
 }
 
 /* Totals Row */
 .live-totals-row {
-	text-align: center;
-	background-color: #333;
-	color : #fff;
-	border: 1px solid;
+  text-align: center;
 }
 .live-totals-row > p {
-	float : left;
-  	border-left: 1px solid #ccc;
-  	padding: 0.5em 0;
-  	font-size : 1.5em;
-  	color: #fff;
+  color: #fff;
+  float: left;
+  font-size: 1.5em;
+  padding: 0.5em 0;
 }
 
 /**
  * 	Special highlight classes 
  */
 .live-split-active {
-  background-color: #fff;
+  background-color: #000;
   border: 1px solid #333;
-  box-shadow: 0 0 10px 2px #fff;
-  color: #333;
+  box-shadow: 0 0 10px 6px #d92843;
 }
-
+.live-split-active > p {
+  color: #fff;
+}
 .live-split-done {
-	color : #ccc !important;
+	
+}
+.live-split-done > p {
+	color: #f6bd37 !important;
 }
 .live-split-newPB {
+
+}
+.live-split-newPB > p {
 	color: #32d900 !important;
 }
 .live-split-bad {
+
+}
+.live-split-bad  > p{
 	color : #FF3500 !important;
 }
-
 /**
  * 	Moderation-Output (right site)
  */
-.mod {
+.mod-outer {
 	padding : 1em;
-	border : 1px solid #ccc;
+}
+.mod {
+	border : 1px solid #ccc;	
 }
 .mod-runInterface {
   border: 1px solid #ccc;
@@ -146,8 +158,8 @@ h2 {
   margin: 0.2em 0;
 }
 .mod-row-active {
-	padding : 1em 0;
-	background-color: #4d834b;
+  background-color: #880620;
+  padding: 1em 0;
 }
 .mod-split-row  input {
 	width : calc(100% - 2em);
@@ -201,7 +213,7 @@ h2 {
 
 button {
   color: #333;
-  font-size: 1em;
+  font-size: .8em;
   margin: 5px;
   padding: 10px;
   width: calc(25% - 10px);
