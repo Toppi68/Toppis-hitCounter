@@ -107,7 +107,7 @@ X.userData = function () {
 			split.stopCountPB();			
 			if(this.curSplit+1 >= this.splits.length){
 				if(this.totals.diff < 0){
-					if(confirm(X.lang.get('resetPB'))){
+					if(confirm(X.lang.get('setPB'))){
 						setPB = true;
 					}
 				}
